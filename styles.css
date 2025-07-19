@@ -605,12 +605,48 @@ form button[type="submit"]:hover,
 
 
 footer {
+  padding: 25px 20px;
   text-align: center;
-  padding: 20px;
   background: linear-gradient(to bottom, #ffe6ee, #f8aec8);
-  height: 20px;
-  line-height: 10px;
+  font-size: 1rem;
+  line-height: 0.5;
+  color: #a6194c;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #d6336c;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #a6194c;
+  transform: scale(1.2);
+}
+
+.icon.whatsapp:hover {
+  color: #25D366;
+}
+
+.icon.youtube:hover {
+  color: #FF0000;
+}
+
+.icon.instagram:hover {
+  color: #E1306C;
+}
+
 
 
 
