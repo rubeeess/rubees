@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUBEES | Online Bouquets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+   <style>
+    body {
+      background: linear-gradient(to bottom, #ffe6ee, #f8aec8);
+     height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="logo.png" alt="RUBEES Logo" class="logo-img">
+      <span class="logo-text">RUBEES</span>
+    </div>
+
+
+  </header>
+
+
+  <section class="thank-you-message">
+    <h2>🎉 Thank you!</h2>
+    <p>Your order has been successfully placed.</p>
+    <p>We'll get in touch with you shortly via WhatsApp.</p>
+  </section>
+
+
+  <footer>
+    <p>&copy; <span id="year"></span> rubees. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+const yearSpan = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
+</script>
+
+  <script>
+    // Prevent form resubmission on back button
+    window.history.replaceState(null, null, window.location.href);
+  </script>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
