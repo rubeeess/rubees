@@ -466,7 +466,6 @@ form button[type="submit"]:hover,
 .about {
   padding: 50px 20px;
   text-align: center;
-  
 }
 
 .about h2 {
@@ -809,10 +808,11 @@ font-size: 1.5em;
     padding: 10px;
   }
 
-  
-  .logo-title {
-    margin-bottom: 10px;
+  .logo-title .logo-text {
+    font-size: 20px;
+    
   }
+  
 .hamburger {
     display: block;
   }
@@ -832,6 +832,7 @@ font-size: 1.5em;
   transition: right 0.4s ease-in-out;
   padding-top: 70px;
   z-index: 1000;
+  border-radius: 10px;
 }
 
 
