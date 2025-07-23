@@ -60,12 +60,14 @@ header {
   color: #9b1c4d;
 }
 
-.side-menu ul li a.active {
-  color: white;
-  background-color: #d6336c;
-  padding: 5px 10px;
-  border-radius: 8px;
+.side-menu a.active {
+   color: #9b1c4d;
+  border-bottom: 2px solid #d6336c;
+
+
 }
+
+
 h2{
     font-size: 2.5rem;
      color: #d6336c;
@@ -704,7 +706,9 @@ font-size: 1.5em;
   display: none;
 }
 
-
+#hidelogo, #hidemenu{
+  display: none;
+}
 
 
 @media (max-width: 1200px) {
@@ -801,6 +805,10 @@ font-size: 1.5em;
 
 
 @media (max-width: 768px) {
+#hidelogo, #hidemenu{
+  display: block;
+}
+
 
   header {
     flex-direction: row;
@@ -866,6 +874,7 @@ font-size: 1.5em;
   color: #d6336c;
   font-weight: bold;
   font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @keyframes slideIn {
@@ -873,6 +882,87 @@ font-size: 1.5em;
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+
+.side-menu a.active {
+border-left:4px solid #d6336c ;
+  
+
+}
+
+.logo-img-small {
+  width: 40px;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.logo-text-small {
+  display: none;
+  font-family: 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d6336c;
+  margin-left: 10px;
+margin-top: -20px;
+}
+
+
+.menu-links {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menu-links li {
+  margin-bottom: -5px;
+}
+
+.menu-links a {
+  color: #662b44;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu-contact {
+  color: #d6336c;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.menu-contact a {
+  color: #d6336c;
+  text-decoration: none;
+}
+
+.menu-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  color: #d6336c;
+}
+
+.menu-btn {
+  margin-top: 100px;
+}
+
+.get-quote-btn {
+  display: inline-block;
+  background: #d6336c;
+  color: #fff;
+  padding: 5px 10px;
+   margin-left: 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
   nav#mobileMenu {

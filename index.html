@@ -16,12 +16,13 @@
   <meta property="og:url" content="https://rubeeess.github.io/rubees/" />
   <meta property="og:type" content="website" />
   <title>RUBEES | Online Bouquets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<link rel="icon" href="logo.png" type="image/png">
 </head>
 
 <body>
@@ -37,17 +38,58 @@
   </div>
 
   <!-- Navigation Links -->
- <!-- Slide Menu Panel -->
+<!-- Full Hamburger Side Menu Panel -->
 <div class="side-menu" id="sideMenu">
-  <ul>
-    <li><a href="#home">Home</a></li>
+  <div class="side-menu-header">
+    <div class="logo-section" id="hidelogo">
+      <img src="logo.png" alt="Logo" class="logo-img-small">
+      <span class="logo-text-small">RUBEES</span>
+    </div>
+    
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="#home">Home</a></li> 
     <li><a href="#bouquets">Collection</a></li>
     <li><a href="#shop">Prices</a></li>
-    <li><a href="#order">Order</a></li>
+    <li><a href="#order">Shop</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
+<div class="mobileham" id="hidemenu">
+
+
+
+
+  <div class="menu-contact">
+    <p>📞 <a href="tel:+923332335482">+92 3332335482</a></p>
+    <p>✉️ <a href="mailto:irubiyairam@gmail.com">irubiyairam@gmail.com</a></p>
+  </div>
+
+ <div class="menu-socials">
+  <a href="https://www.instagram.com/rubeees._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+     class="social-icon" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/923332335482" 
+     class="social-icon" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </div>
+
+
+  <div class="menu-btn">
+    <a href="#shop" class="get-quote-btn">Explore</a>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
 
 </header>
 
@@ -569,6 +611,28 @@ bouquetTypesContainer.scrollIntoView({ behavior: "smooth" });
       sideMenu.classList.remove('open');
       overlay.style.display = 'none';
     });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuLinksActive = document.querySelectorAll('.side-menu a');
+
+  menuLinksActive.forEach(link => {
+    link.addEventListener('click', function () {
+      menuLinksActive.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+});
+
+</script>
+
+<script>
+  window.addEventListener('pageshow', function (event) {
+    if (event.persisted || (window.performance && window.performance.getEntriesByType("navigation")[0].type === "back_forward")) {
+      location.reload();
+    }
   });
 </script>
 
